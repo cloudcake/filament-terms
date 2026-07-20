@@ -10,6 +10,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Panel;
 use Filament\Forms\Components\Field;
 use Filament\Infolists\Components\Entry;
+use Filament\Resources\Resource;
 use Filament\Schemas\Components\Callout;
 use Filament\Schemas\Components\Component;
 use Filament\Tables\Columns\Column;
