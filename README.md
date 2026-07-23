@@ -1,7 +1,21 @@
-# cloudcake/filament-terms
+![banner](./banner.jpeg)
 
-# Terminology
-Custom resource/model/column terminology per-panel and/or per-tenant.
+## Installation
+
+### Add the cloudcake composer registry to your project's composer.json file:
+
+```json
+"repositories": [
+    {
+        "type": "composer",
+        "url": "https://composer.cloudcake.dev"
+    }
+]
+```
+
+### Install the package via Composer
+
+`composer require cloudcake/filament-terms`
 
 ## Quickstart
 
@@ -17,8 +31,7 @@ public function panel(Panel $panel): Panel
         // ...
         
         Terminology::make()
-               ->pageHeaderAction(false)
-               ->topbarAction()
+               ->pageHeaderAction()
                ->descriptions()
     ]);
 }
