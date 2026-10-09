@@ -2,7 +2,7 @@
 
 namespace Cloudcake\Terms\Livewire;
 
-use Cloudcake\Components\IconPicker\Forms\Components\IconPicker;
+use Cloudcake\Components\SelectIcon;
 use Cloudcake\Terms\Contracts\Renamable;
 use Cloudcake\Terms\Contracts\RenamableColumns;
 use Cloudcake\Terms\Models\PanelTerminology;
@@ -198,7 +198,7 @@ class TerminologyEditAction extends LivewireComponent implements HasActions, Has
      */
     private function resolveIconField(string $statePath): Field
     {
-        return IconPicker::make($statePath)
+        return SelectIcon::make($statePath)
             ->grow(false)
             ->placeholder('Icon')
             ->label('Icon');
