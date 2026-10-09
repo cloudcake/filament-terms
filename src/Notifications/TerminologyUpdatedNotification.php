@@ -2,6 +2,7 @@
 
 namespace Cloudcake\Terms\Notifications;
 
+use Cloudcake\Components\Enums\Tabler;
 use Filament\Notifications\Notification;
 
 class TerminologyUpdatedNotification extends Notification
@@ -10,7 +11,7 @@ class TerminologyUpdatedNotification extends Notification
     {
         return parent::make($id)
                      ->success()
-                     ->icon('tabler-language')
+                     ->icon(Tabler::Language)
                      ->title('Terminology Updated')
                      ->body('Your terminologies have been updated successfully.');
     }

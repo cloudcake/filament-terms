@@ -77,7 +77,7 @@ class TerminologyEditAction extends LivewireComponent implements HasActions, Has
             <div>
                 <x-filament::button
                             class="cursor-pointer"
-                            icon="tabler-language"
+                            :icon="\Cloudcake\Components\Enums\Tabler::Language"
                             color="gray"
                             tooltip="$tooltip"
                             wire:click="mountAction('terminology')">
