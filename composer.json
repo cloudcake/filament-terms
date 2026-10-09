@@ -5,7 +5,7 @@
   "description": "Filament panel terminology per tenant and/or per panel.",
   "require": {
     "php": "^8.2",
-    "cloudcake/filament-components": "dev-main",
+    "cloudcake/filament-icons": "dev-main",
     "filament/filament": "^4.0|^5.0"
   },
   "autoload": {
