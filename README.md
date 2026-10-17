@@ -20,7 +20,7 @@
 ## Quickstart
 
 ```php
-use Cloudcake\Terms\Terminology
+use Cloudcake\Terms\Terminology;
 use Filament\Panel;
 
 public function panel(Panel $panel): Panel
@@ -37,7 +37,7 @@ public function panel(Panel $panel): Panel
 }
 ```
 
-Then add the `Renamable` contract and `HasAlternativeName` concern to any resources that should be rename-able.
+Then add the `Renamable` contract and `HasAlternativeTerm` concern to any resources that should be rename-able.
 
 ```php
 use Cloudcake\Terms\Concerns\HasAlternativeTerm;
@@ -61,7 +61,7 @@ models that should be rename-able.
 
 ```php
 use Cloudcake\Terms\Concerns\HasRenamableColumns;
-use Cloudcake\Terms\Contracts\RenameableColumns;
+use Cloudcake\Terms\Contracts\RenamableColumns;
 
 class User extends Authenticatable implements RenamableColumns
 {
