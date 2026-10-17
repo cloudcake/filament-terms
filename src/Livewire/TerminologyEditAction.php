@@ -38,7 +38,7 @@ class TerminologyEditAction extends LivewireComponent implements HasActions, Has
      */
     public function terminologyAction(): Action
     {
-        return Action::make('terminologyEdit')
+        return Action::make('terminology')
             ->label($this->label)
             ->outlined()
             ->modal()
@@ -63,6 +63,7 @@ class TerminologyEditAction extends LivewireComponent implements HasActions, Has
     public function mount(string $resource, string $label = 'Edit', bool $descriptionEnabled = false): void
     {
         $this->resource = $resource;
+        $this->label = $label;
         $this->descriptionsEnabled = $descriptionEnabled;
     }
 
@@ -178,18 +179,6 @@ class TerminologyEditAction extends LivewireComponent implements HasActions, Has
             ->columnSpanFull()
             ->belowContent('Provide a label for the badge.')
             ->label('Badge');
-    }
-
-    /**
-     * @param string $statePath
-     * @return Field
-     */
-    private function resolveColorField(string $statePath): Field
-    {
-        return TextInput::make($statePath)
-            ->columnSpan(4)
-            ->belowContent('Provide a colour for the badge.')
-            ->label('Colour');
     }
 
     /**
