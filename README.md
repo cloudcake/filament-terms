@@ -77,7 +77,6 @@ If you want to explicitly define which columns should be rename-able, you can re
 explicitly define the `renamable()` method on the model. By default, all columns that are not hidden are rename-able.
 
 ```php
-use Cloudcake\Terms\Concerns\HasRenamableColumns;
 use Cloudcake\Terms\Contracts\RenamableColumns;
 
 class User extends Authenticatable implements RenamableColumns

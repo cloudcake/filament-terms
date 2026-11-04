@@ -2,7 +2,7 @@
 
 namespace Cloudcake\Terms\Livewire;
 
-use Cloudcake\Components\SelectIcon;
+use Cloudcake\Icons\SelectIcon;
 use Cloudcake\Terms\Contracts\Renamable;
 use Cloudcake\Terms\Contracts\RenamableColumns;
 use Cloudcake\Terms\Models\PanelTerminology;
@@ -78,7 +78,7 @@ class TerminologyEditAction extends LivewireComponent implements HasActions, Has
             <div>
                 <x-filament::button
                             class="cursor-pointer"
-                            :icon="\Cloudcake\Components\Enums\Tabler::Language"
+                            :icon="\Cloudcake\Icons\Enums\Tabler::Language"
                             color="gray"
                             tooltip="$tooltip"
                             wire:click="mountAction('terminology')">

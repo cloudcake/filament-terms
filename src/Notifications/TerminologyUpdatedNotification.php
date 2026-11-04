@@ -2,7 +2,7 @@
 
 namespace Cloudcake\Terms\Notifications;
 
-use Cloudcake\Components\Enums\Tabler;
+use Cloudcake\Icons\Enums\Tabler;
 use Filament\Notifications\Notification;
 
 class TerminologyUpdatedNotification extends Notification
